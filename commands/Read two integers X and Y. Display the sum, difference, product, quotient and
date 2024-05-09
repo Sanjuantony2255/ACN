@@ -1,0 +1,37 @@
+a. Read two integers X and Y. Display the sum, difference, product, quotient, and remainder of these variables.
+
+bash
+
+# Read inputs
+read -p "Enter the first integer (X): " X
+read -p "Enter the second integer (Y): " Y
+
+# Perform arithmetic operations
+sum=$(expr $X + $Y)
+difference=$(expr $X - $Y)
+product=$(expr $X \* $Y)
+quotient=$(expr $X / $Y)
+remainder=$(expr $X % $Y)
+
+# Display results
+echo "Sum: $sum"
+echo "Difference: $difference"
+echo "Product: $product"
+echo "Quotient: $quotient"
+echo "Remainder: $remainder"
+
+b. Read a string, S, a position, p and a length l. Display the substring of length l starting at position p from the string S.
+
+bash
+
+# Read inputs
+read -p "Enter a string (S): " S
+read -p "Enter the starting position (p): " p
+read -p "Enter the length (l): " l
+
+# Extract substring
+substring=$(expr substr "$S" $p $l)
+
+# Display substring
+echo "Substring of length $l starting at position $p from the string '$S': $substring"
+

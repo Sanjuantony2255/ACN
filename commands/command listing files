@@ -1,0 +1,38 @@
+a. List the contents of dir1 and all its descendants:
+
+bash
+
+ls -R dir1
+
+
+
+b. List the contents of dir3:
+i. Alphabetical Order:
+
+bash
+
+ls -l dir3 | sort
+
+ii. Sorted on Time of modification, newest first:
+
+bash
+
+ls -lt dir3
+
+iii. Sorted on Size:
+
+bash
+
+ls -lS dir3
+
+iv. Reverse of all above:
+
+bash
+
+ls -lR --sort=none dir3 | sort -r
+
+v. Long listing of files Sorted on Size with smallest first and size displayed in human-readable form:
+
+bash
+
+ls -lhS dir3

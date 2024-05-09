@@ -1,0 +1,14 @@
+a. Display all lines in a file that contain the string "abc":
+
+bash
+
+grep "abc" file_name
+
+Replace file_name with the name of your file.
+
+b. Display all lines in a file that do not contain the string "abc":
+
+bash
+
+grep -v "abc" file_name
+

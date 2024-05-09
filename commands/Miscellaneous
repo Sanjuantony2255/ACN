@@ -1,0 +1,43 @@
+a. Using tar, create a tar.gz file of the folder dir1 with the name mydir.tar.gz:
+
+bash
+
+tar -czvf mydir.tar.gz dir1
+
+b. Extract the contents of mydir.tar.gz to dir6:
+
+bash
+
+tar -xzvf mydir.tar.gz -C dir1/dir6
+
+c. Use top to display processes sorted on:
+i. ProcessId:
+
+bash
+
+top -o PID
+
+ii. CPU%:
+
+bash
+
+top -o %CPU
+
+d. Use ps to display:
+i. Processes associated with the current terminal:
+
+bash
+
+ps T
+
+ii. All processes in the system:
+
+bash
+
+ps aux
+
+e. Use df to display the storage available in each partition in human-readable form:
+
+bash
+
+df -h

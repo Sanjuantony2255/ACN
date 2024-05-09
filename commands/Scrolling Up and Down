@@ -1,0 +1,28 @@
+a. Displaying the first 10 lines of the file:
+
+bash
+
+head lsoutput
+
+b. Displaying the file starting from the 10th line:
+
+bash
+
+tail +10 lsoutput
+
+For scrolling up and down, you can use commands like less, more, or vim.
+
+i. Scrolling Up:
+
+bash
+
+less lsoutput
+
+Then you can press the Up arrow key to scroll up.
+
+ii. Scrolling Up and Down:
+
+bash
+
+vim lsoutput
+

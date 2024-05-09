@@ -1,0 +1,30 @@
+a. Display the details of the first 12 users in the system:
+
+bash
+
+head -n 12 /etc/passwd | cat
+
+b. Display the details of the last 7 users in the system:
+
+bash
+
+tail -n 7 /etc/passwd | cat
+
+c. Display all but the first 3 users in the system:
+
+bash
+
+tail -n +4 /etc/passwd | cat
+
+d. Display all but the last 5 users in the system:
+
+bash
+
+head -n -5 /etc/passwd | cat
+
+e. Display only the 9th user in the system:
+
+bash
+
+head -n 9 /etc/passwd | tail -n 1 | cat
+
