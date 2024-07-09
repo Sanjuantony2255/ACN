@@ -1,0 +1,47 @@
+pwd- current dir
+
+ls- dir list
+
+cd desktop- go to folder
+
+mkdir -new dir
+
+cd ~ -full back
+
+cd. -go back
+
+new text - cat hello.txt
+
+copy- cat>file1.txt  file2.txt
+
+copy dir- mkdir cp
+          cp -r test test1
+
+copy to another- cp file1.txt ~/Document/
+
+rename- mv file.txt new.txt
+
+move file- mv new.txt ./ text2
+
+man- manual
+--help
+
+count line- wc -1 newfile.txt
+words count- wc -w newfile.txt
+
+ring- pring google.com
+      pring -t google.com
+host.google.com
+
+file details ls -1
+
+execute shell- chmod a+x file.sh
+./file.sh
+nano file.sh
+
+soft link- cat> hello.txt shortcut (add details)
+hard link- cat> hello.txt in hello.txt
+
+archive- tar-czvf file.tar.gz hello.txt main.txt
+
+extact tar- tar-xzvf file.tar.gz
