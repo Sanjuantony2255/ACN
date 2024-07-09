@@ -1,0 +1,176 @@
+date
+
+echo "Current date :$(date)"
+echo "Current Time :$(date +%H:%M:%S)"
+echo "Current directory:$(pwd)
+
+Armstrong
+
+
+
+read -p "Enter a number: " num
+temp=$num
+sum=0
+len=${#num}
+while [ $num -gt 0 ]; 
+do
+    digit=$((num % 10))
+    sum=$((sum + digit ** len))
+    num=$((num / 10))
+done
+if [ $sum -eq $temp ]; 
+then
+    echo "The number $temp is an Armstrong number"
+else
+    echo "The number $temp is not an Armstrong number"
+fi
+
+
+decimal
+
+echo "Enter a decimal number:"
+read -r number
+
+binary_number=""
+while [ "$number" -gt 0 ]; do
+    binary_number="$((number % 2))$binary_number"
+    number=$((number / 2))
+done
+
+echo "The binary number is: $binary_number"
+
+
+indianstate
+
+
+read -p "Enter the name of an Indian state:"  state
+state_lowercase=$(echo "$state" | tr '[:upper:]' '[:lower:]')
+case $state_lowercase in
+    "andhra pradesh") main_language="Telugu" ;;
+    "assam") main_language="Assamese" ;;
+    "bihar" | "himachal pradesh") main_language="Hindi" ;;
+    "karnataka") main_language="Kannada" ;;
+    "kerala" | "lakshadweep") main_language="Malayalam" ;;
+    "tamil nadu") main_language="Tamil" ;;
+    *) main_language="Unknown" ;;
+esac
+echo "The main language of $state is $main_language."
+
+
+long 3
+
+
+read -p "Enter the first number: " num1
+read -p "Enter the second number: " num2
+read -p "Enter the third number: " num3
+if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ]; 
+then
+    echo "The largest number: $num1"
+elif 
+[ $num2 -gt $num3 ]; 
+then
+    echo "The largest number: $num2"
+else
+    echo "The largest number: $num3"
+fi
+
+
+marks
+
+echo "Enter the marks for the student:"
+read -p "Mark 1: " mark1
+read -p "Mark 2: " mark2
+read -p "Mark 3: " mark3
+average=$(( (mark1 + mark2 + mark3) / 3 ))
+if (( average >= 90 )); then
+    grade="S"
+elif (( average >= 80 )); then
+    grade="A"
+elif (( average >= 60 )); then
+    grade="B"
+elif (( average >= 40 )); then
+    grade="P"
+else
+    grade="F"
+fi
+echo "Average: $average"
+echo "Grade: $grade"
+
+multitable
+
+
+echo "Enter a number:"
+read -r number
+for ((i = 1; i <= 10; i++))
+do
+    echo "$number * $i = $((number * i))"
+done
+
+prime
+
+
+read -p "Enter the lower limit: " low
+while [ $low -le 1 ]; do
+    read -p "Please enter a valid lower limit: " low
+done
+
+read -p "Enter the upper limit: " upper
+count=0
+for ((num = low; num <= upper; num++)); do
+    factors=$(factor $num)
+    if [ "$factors" == "$num: $num" ]; then
+        echo "$num is prime"
+        ((count++))
+    fi
+done
+echo "There are $count prime numbers between $low and $upper"
+
+
+reverse
+
+
+read -p "Enter a number: " num
+rev=0
+while [ $num -gt 0 ]
+do
+    rev=$((rev * 10 + num % 10))
+    num=$((num / 10))
+done
+echo "Reversed number: $rev"
+
+
+upper lower
+
+
+echo "Enter the file name:"
+read filename
+if [ ! -f "$filename" ]; then
+echo "File '$filename' does not exist."
+exit 1
+fi
+cat "$filename" | tr '[:upper:]' '[:lower:]' > lowercase.txt
+lines=$(wc -l lowercase.txt | cut -d ' ' -f 1)
+words=$(wc -w lowercase.txt | cut -d ' ' -f 1)
+characters=$(wc -c lowercase.txt | cut -d ' ' -f 1)
+sort -r lowercase.txt > sorted.txt
+cat sorted.txt
+echo "Number of lines: $lines"
+echo "Number of words: $words"
+echo "Number of characters: $characters"
+
+user password
+
+
+valid_username="user"
+valid_password="jaganmca"
+read -p "Enter your username: " username
+read -sp "Enter your password: " password
+echo
+if [[ $username == $valid_username && $password == $valid_password ]]; then
+    echo "Login successful!"
+else
+    echo "Login failed!"
+fi
+
+
+
