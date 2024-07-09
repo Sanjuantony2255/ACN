@@ -45,3 +45,60 @@ hard link- cat> hello.txt in hello.txt
 archive- tar-czvf file.tar.gz hello.txt main.txt
 
 extact tar- tar-xzvf file.tar.gz
+
+
+1) Remove all files whose name starts with a vowel, upper or lowercase.
+
+Ans:
+
+First angnolla files ondonn nokuka..illenki create cheyyanam...ivide display onnum illallo..so empty files aayalum mathi..
+Create a few files with touch.
+
+Eg: _touch aefile.txt_ ,  _touch ohgfile.doc_..etcetc.
+
+Then use;
+
+*rm [aeiouAEIOU]**
+
+
+2) Display 2nd columns of file contents..
+
+Ans: 
+Create a file with multiple lines, 3 words each..like
+
+app rope cap
+Tap sap lap
+Map soap watsapp
+
+Then, use;
+
+*awk '{ print $2 }' filename.txt*
+
+Output is;
+rope
+sap
+soap
+
+
+
+3) Display content of file after Removing first letter of each line.
+
+Ans:
+Create a file with 3or more lines,like;
+
+Apple
+Grapple
+Shackle
+Klaklukle
+
+
+Then use;
+
+*sed 's/^.//g' filename.txt*
+
+Output is;
+
+pple
+rapple
+hackle
+laklukle
