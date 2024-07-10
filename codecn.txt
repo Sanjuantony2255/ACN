@@ -102,3 +102,54 @@ pple
 rapple
 hackle
 laklukle
+
+
+1) Palindrome;
+
+Reverse ariyalo...
+Athil;
+
+Aadhyame input edukkuallo oru numebr into variable "n".
+
+Ath copy cheyyanam to another variable.
+
+Eg.    m=n
+
+Ennit avsanam reverse kandpidich kazhiyumlo, into variable " r".aa loop kazhinjitte,
+
+
+Add if condition as;
+  _if ( r == m )_
+_then print ''is Palindrome";_
+  _else_
+_print "is not Palindrome";_
+
+
+2) Armstrong;
+
+Same reethiyil m=n  copy cheyth vekkuka...
+Ennitt, Loopinte akath;
+
+Aa r=(r*10)+t;
+Enn ullath maatiyitt,
+
+_r = r + (t*t*t);_
+
+Enn aakkanam..
+
+nerthathe pole if conditionm kodukkanam..then;
+
+If m==r , is Armstrong.....else Not.
+
+
+
+3) SumofDigits;
+
+Same Reverse pole..
+But loopinte last aa r= ennullath maatiyitt,
+
+_r= r+t;_
+
+Enn akkanam..
+
+Resutling ''r''  is the sum of digits of n...print it.
